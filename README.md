@@ -66,6 +66,10 @@ Unmapped categories cause an error rather than producing a price. The source fil
 
 The output includes the input columns plus `price_gnf`, `category_multiplier`, `try_per_usd`, and `gnf_per_usd`. For Excel input, only the selected worksheet's cell values are processed; source formatting, formulas, and other worksheets are not carried over.
 
+## E-Commerce Platform Exports
+
+The tool can process compatible product CSV or Excel exports from Ticimax and similar e-commerce platforms. If an export uses different column names or category labels, configure the column and category mapping options shown above. This is a file-based utility and does not connect directly to any platform.
+
 ## Tests
 
 ```powershell
@@ -141,6 +145,10 @@ python price_converter.py products.csv `
 Eşleştirilmemiş kategorilerde fiyat üretmek yerine hata verilir. Kaynak dosya değiştirilmez. Çıktı `.xlsx` biçimindedir ve varsayılan olarak kaynak dosyanın yanına, adına `_gnf` eklenerek kaydedilir. Başka bir yol belirlemek için `--output` kullanın. Çıktı dosyası zaten varsa üzerine yazmak için `--overwrite` seçeneğini ekleyin.
 
 Çıktıda girdi sütunlarına ek olarak `price_gnf`, `category_multiplier`, `try_per_usd` ve `gnf_per_usd` sütunları bulunur. Excel girdisinde yalnızca seçilen sayfanın hücre değerleri işlenir; kaynak biçimlendirmesi, formüller ve diğer çalışma sayfaları çıktıya aktarılmaz.
+
+## E-Ticaret Platformu Çıktıları
+
+Araç, Ticimax ve benzeri e-ticaret platformlarından dışa aktarılan uyumlu ürün CSV veya Excel dosyalarını işleyebilir. Dışa aktarılan dosyada sütun adları veya kategori etiketleri farklıysa yukarıdaki sütun ve kategori eşleştirme seçeneklerini ayarlayın. Araç dosya üzerinden çalışır ve herhangi bir platforma doğrudan bağlanmaz.
 
 ## Testler
 
